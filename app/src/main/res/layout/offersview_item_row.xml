@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/offer_border">
+
+    <ImageView
+        android:id="@+id/serviceProvider_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src = "@mipmap/jiffylube"
+        app:layout_constraintRight_toLeftOf="@+id/guideline20"
+        app:layout_constraintLeft_toRightOf="@+id/guideline05"
+        app:layout_constraintTop_toBottomOf="@+id/guidelineTop"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"/>
+
+    <TextView
+        android:id="@+id/item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop = "5dp"
+        android:text="1:30 PM - 2:30 PM"
+        android:textSize="14sp"
+        android:textStyle = "normal"
+        android:typeface = "sans"
+        app:layout_constraintBottom_toTopOf="@+id/item_duration"
+        app:layout_constraintLeft_toRightOf="@+id/guideline20"
+        app:layout_constraintRight_toLeftOf="@+id/guideline50"
+        app:layout_constraintTop_toBottomOf="@+id/guidelineTop" />
+
+    <TextView
+        android:id="@+id/item_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:layout_weight="1"
+        android:text="2 Hours"
+        android:textSize="24sp"
+        android:textStyle = "normal"
+        android:typeface = "sans"
+        app:layout_constraintBottom_toTopOf="@+id/item_description"
+        app:layout_constraintLeft_toRightOf="@+id/guideline20"
+        app:layout_constraintRight_toLeftOf="@+id/guideline50"
+        app:layout_constraintTop_toBottomOf="@+id/item_time" />
+
+    <TextView
+        android:id="@+id/item_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|start"
+        android:layout_weight="1"
+        android:text="Oil Change"
+        android:textSize="16sp"
+        android:textStyle = "normal"
+        android:typeface = "sans"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"
+        app:layout_constraintLeft_toRightOf="@+id/guideline20"
+        app:layout_constraintRight_toLeftOf="@+id/guideline50"
+        app:layout_constraintTop_toBottomOf="@+id/item_duration" />
+
+    <TextView
+        android:id="@+id/item_earnings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$28"
+        android:textSize="30sp"
+        android:typeface = "sans"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/item_earnings_extra"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintLeft_toRightOf="@+id/guideline50"
+        app:layout_constraintRight_toLeftOf="@+id/guideline80"
+        app:layout_constraintTop_toBottomOf="@+id/guidelineTop" />
+
+    <TextView
+        android:id="@+id/item_earnings_extra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+ Tips"
+        android:textSize="18sp"
+        android:typeface = "sans"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintLeft_toRightOf="@+id/guideline50"
+        app:layout_constraintRight_toLeftOf="@+id/guideline80"
+        app:layout_constraintTop_toBottomOf="@+id/item_earnings" />
+
+    <ImageView
+        android:id="@+id/distance_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src = "@mipmap/distance_far"
+        android:layout_marginTop = "5dp"
+        app:layout_constraintRight_toLeftOf="@+id/guideline95"
+        app:layout_constraintLeft_toRightOf="@+id/guideline80"
+        app:layout_constraintTop_toBottomOf="@+id/guidelineTop"
+        app:layout_constraintBottom_toTopOf="@+id/item_distance"/>
+
+    <TextView
+        android:id="@+id/item_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="10.4 miles"
+        android:textSize="14sp"
+        android:typeface = "sans"
+        android:textStyle="italic"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@id/guidelineBottom"
+        app:layout_constraintLeft_toRightOf="@+id/guideline80"
+        app:layout_constraintRight_toLeftOf="@+id/guideline95"
+        app:layout_constraintTop_toBottomOf="@id/distance_image" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline05"
+        app:layout_constraintGuide_percent="0.01"
+        android:orientation="vertical" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline20"
+        app:layout_constraintGuide_percent="0.2"
+        android:orientation="vertical" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline50"
+        app:layout_constraintGuide_percent="0.5"
+        android:orientation="vertical" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline80"
+        app:layout_constraintGuide_percent="0.8"
+        android:orientation="vertical" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline95"
+        app:layout_constraintGuide_percent="0.95"
+        android:orientation="vertical" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guidelineTop"
+        app:layout_constraintGuide_percent="0.05"
+        android:orientation="horizontal" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guidelineBottom"
+        app:layout_constraintGuide_percent="0.95"
+        android:orientation="horizontal" />
+
+</android.support.constraint.ConstraintLayout>

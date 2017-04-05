@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    tools:context="com.scrapdoodle.bryan.scrubapp7.MainActivity">
+
+    <Switch
+        android:id="@+id/online_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Offline "
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_marginEnd="20dp" />
+
+    <Switch
+        android:id="@+id/test_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Test offers "
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_marginEnd="20dp" />
+
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go online to see current offers"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/online_switch"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/offersView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/test_switch"
+        app:layout_constraintTop_toBottomOf="@+id/status_text"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:scrollbars="vertical"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp" />
+
+
+</android.support.constraint.ConstraintLayout>
